@@ -133,7 +133,6 @@ header .contact {
 /* кнопка ЗАКАЗАТЬ УСЛУГУ в герое */
 
 .hero-btn {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -205,7 +204,6 @@ header .contact {
 
 /* filter button styles */
 .filter {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
