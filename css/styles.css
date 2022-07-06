@@ -12,6 +12,16 @@
 
 
 /* основное наследование */
+html {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* outline: solid 2px tomato; */
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -24,8 +34,22 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style-type: none;
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* logo */
@@ -75,6 +99,9 @@ li {
 /* стиль навигации */
 
 /* шрифт */
+.nav {
+    margin: 0;
+}
 
 .nav-link {
     font-weight: 500;
@@ -111,22 +138,24 @@ header .contact {
 
 /* hero styles */
 
-/* герой стиль */
-
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
 /* хедлайн герой шрифт */
 
 .hero-heading {
+    width: 695px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -137,19 +166,26 @@ header .contact {
     font-size: 16px;
     line-height: 1.87;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-color);
 
+    height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: none;
+    padding: 10px 32px;
+
 }
 
 /* advantages styles */
 
-/* шрифт заголовки преимуществ */
+.advantages-list {
+    margin: 94px auto;
+}
+
+.advantages-list h3 {
+    margin-bottom: 10px;
+}
 
 .advantages-list-caption {
     font-family: 'Roboto';
@@ -161,8 +197,6 @@ header .contact {
     color: var(--second-text-color);
 }
 
-/* team styles */
-
 /* заголовки второго уровня на главной странице */
 
 .main-page h2 {
@@ -173,6 +207,8 @@ header .contact {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
+
+/* team styles */
 
 /* имена сотрудников шрифт */
 
@@ -196,14 +232,21 @@ header .contact {
 
 .team {
     background-color: var(--second-background);
+    margin-top: 94px;
 }
 
 
 
 /* portfolio page styles */
 
+.portfolio-page .container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
 /* filter button styles */
 .filter {
+    display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -211,7 +254,10 @@ header .contact {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     background-color: var(--second-background);
-    border: none;
+    height: 38px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    /* margin-bottom: 50px; */
 }
 
 .filter:hover,
@@ -231,6 +277,9 @@ header .contact {
     color: var(--second-text-color);
 }
 
+.cards {
+    padding: 30px;
+}
 
 /* footer styles */
 
@@ -241,6 +290,9 @@ footer {
     color: var(--white-color);
 }
 
+.footer-contacts {
+    margin: 0;
+}
 
 /* географический адрес в футере шрифт */
 
