@@ -20,7 +20,7 @@ html {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    /* outline: solid 2px tomato; */
+    outline: solid 2px tomato;
 }
 
 body {
@@ -80,7 +80,6 @@ p {
     cursor: pointer;
 }
 
-
 .hidden-title {
     position: absolute;
     width: 1px;
@@ -93,14 +92,10 @@ p {
 }
 
 
-
 /* header styles */
 
-/* стиль навигации */
-
-/* шрифт */
-.nav {
-    margin: 0;
+header .container {
+    padding: 24px 0 25px 0;
 }
 
 .nav-link {
@@ -134,13 +129,17 @@ header .contact {
     color: var(--accent-color);
 }
 
-
+.nav .current {
+    color: var(--accent-color);
+}
 
 /* hero styles */
 
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /* хедлайн герой шрифт */
@@ -169,21 +168,24 @@ header .contact {
     letter-spacing: 0.06em;
     color: var(--white-color);
 
-    height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
+}
 
+.hero-btn:hover {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+    margin-bottom: 94px;
 }
 
 /* advantages styles */
 
-.advantages-list {
-    margin: 94px auto;
-}
-
-.advantages-list h3 {
+h3 {
     margin-bottom: 10px;
 }
 
@@ -206,6 +208,13 @@ header .contact {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    margin-bottom: 50px;
+}
+
+/* images no gap */
+
+.card-img {
+    display: block;
 }
 
 /* team styles */
@@ -218,6 +227,7 @@ header .contact {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    margin-top: 30px;
 }
 
 /* должность сотрудников шрифт */
@@ -232,7 +242,16 @@ header .contact {
 
 .team {
     background-color: var(--second-background);
-    margin-top: 94px;
+    padding: 94px 0;
+    text-align: center;
+}
+
+.team-list-card {
+    background: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    padding-bottom: 30px;
 }
 
 
@@ -245,16 +264,14 @@ header .contact {
 }
 
 /* filter button styles */
+
 .filter {
-    display: inline-block;
+    /* display: inline-block; */
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
     background-color: var(--second-background);
-    height: 38px;
     border-radius: 4px;
     padding: 6px 22px;
     /* margin-bottom: 50px; */
@@ -275,10 +292,22 @@ header .contact {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-text-color);
+    /* padding: 20px 0 4px 24px; */
+    margin: 20px 0 4px 24px;
 }
 
-.cards {
-    padding: 30px;
+/* .cards {
+    padding: 0 30px 30px 0;
+} */
+
+.portfolio-card {
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    padding-bottom: 20px;
+}
+
+.portfolio-card p {
+    margin-left: 24px;
 }
 
 /* footer styles */
@@ -288,11 +317,9 @@ header .contact {
 footer {
     background-color: var(--footer-background);
     color: var(--white-color);
+    padding: 60px 0;
 }
 
-.footer-contacts {
-    margin: 0;
-}
 
 /* географический адрес в футере шрифт */
 
@@ -303,6 +330,9 @@ footer .address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    display: inline-block;
+    margin-bottom: 9px;
 }
 
 /* контакты в футере шрифт */
@@ -311,9 +341,13 @@ footer .contact {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.mail {
+    display: inline-block;
+    margin-bottom: 9px;
 }
 
 /* ховер и фокус в футере */
@@ -321,4 +355,9 @@ footer .contact {
 footer .contact:hover,
 footer .contact:focus {
     color: var(--accent-color);
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
 }
